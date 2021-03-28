@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vedikaser-service2
+spec:
+  ports:
+   - port: 84
+     targetPort: vedikaser-port
+     protocol: TCP
+  selector:
+   app: vedika
+  type: NodePort
